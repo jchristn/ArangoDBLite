@@ -1260,14 +1260,18 @@ namespace ArangoDBLite
             List<AdbVertex> vertices = new List<AdbVertex>();
             List<T> custom = new List<T>();
 
+            JObject jObj = null;
+            JArray jArray = null;
+
             Logger?.Invoke(_Header + "executing cursor query using " + method.ToString() + " " + url);
             RestResponse resp = await GetRestResponse(url, method, data);
              
             AdbResult ret = new AdbResult(resp);
             if (!ret.Error && !String.IsNullOrEmpty(resp.DataAsString))
             {
-                JObject jObj = JObject.Parse(resp.DataAsString); 
-                JArray jArray = jObj["result"] as JArray;
+                jObj = JObject.Parse(resp.DataAsString); 
+                jArray = jObj["result"] as JArray;
+
                 foreach (JObject j in jArray)
                 {
                     if (typeof(T) == typeof(AdbEdge))
@@ -1277,6 +1281,14 @@ namespace ArangoDBLite
                     else if (typeof(T) == typeof(AdbVertex))
                     {
                         vertices.Add(AdbVertex.FromCursorQuery(j));
+                    } 
+                    else if (typeof(T) == typeof(JArray))
+                    {
+                        // do nothing
+                    }
+                    else if (typeof(T) == typeof(JObject))
+                    {
+                        // do nothing
                     }
                     else
                     {
@@ -1292,6 +1304,14 @@ namespace ArangoDBLite
             else if (typeof(T) == typeof(AdbVertex))
             {
                 ret.Result = vertices;
+            }
+            else if (typeof(T) == typeof(JArray))
+            {
+                ret.Result = jArray;
+            }
+            else if (typeof(T) == typeof(JObject))
+            {
+                ret.Result = jObj;
             }
             else
             {

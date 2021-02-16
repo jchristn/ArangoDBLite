@@ -14,9 +14,10 @@ If you have any issues or feedback, please file an issue here in Github. We'd lo
 
 This project was built to provide a dead simple interface to interact with ArangoDB.  It is not meant to be complete, but rather, optimized for the simplest possible workflows and integration.
 
-## New in v1.0.0
+## New in v1.0.x
 
 - Initial release
+- Fix for ```First``` APIs
 
 ## Example Project
 

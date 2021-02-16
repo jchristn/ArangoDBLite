@@ -2,10 +2,12 @@
 
 ## Current Version
 
-v1.0.0
+v1.0.1
 
-- Initial release
+- Fix for ```First``` APIs
 
 ## Previous Versions
 
-Changelog from previous releases will be listed here.
+v1.0.0
+
+- Initial release
