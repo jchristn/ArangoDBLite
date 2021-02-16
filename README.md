@@ -1,4 +1,4 @@
-![alt tag](https://github.com/jchristn/arangodblite/blob/master/assets/logo.ico)
+![alt tag](https://raw.githubusercontent.com/jchristn/ArangoDBLite/main/assets/logo.ico)
 
 # ArangoDBLite
 
