@@ -1,0 +1,13 @@
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\ArangoDBLite.xml
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\assets\logo.ico
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\assets\logo.png
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\LICENSE.md
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\ArangoDBLite.deps.json
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\ArangoDBLite.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netstandard2.0\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.AssemblyInfoInputs.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.AssemblyInfo.cs
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.csproj.CoreCompileInputs.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.csprojAssemblyReference.cache

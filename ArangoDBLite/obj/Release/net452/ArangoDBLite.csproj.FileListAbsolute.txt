@@ -1,0 +1,15 @@
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\ArangoDBLite.xml
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\assets\logo.ico
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\assets\logo.png
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\LICENSE.md
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\ArangoDBLite.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\Newtonsoft.Json.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\RestWrapper.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.csprojAssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.AssemblyInfoInputs.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.AssemblyInfo.cs
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.csproj.CoreCompileInputs.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.csproj.CopyComplete
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\net452\ArangoDBLite.pdb

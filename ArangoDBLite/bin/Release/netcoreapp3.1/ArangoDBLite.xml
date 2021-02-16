@@ -1,0 +1,835 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArangoDBLite</name>
+    </assembly>
+    <members>
+        <member name="T:ArangoDBLite.AdbClient">
+            <summary>
+            Client for ArangoDB.
+            </summary>
+        </member>
+        <member name="F:ArangoDBLite.AdbClient.Logger">
+            <summary>
+            Method to invoke when sending log messages.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbClient.LogHttpRequests">
+            <summary>
+            When 'Logger' is set, indicate if HTTP requests and responses should also be logged.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="username">Username.</param>
+            <param name="password">Password.</param>
+            <param name="baseUrl">Base URL for ArangoDB, i.e. http://localhost:8529/</param>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListDatabases">
+            <summary>
+            List databases available within the ArangoDB instance.
+            </summary>
+            <returns>AdbResult with Result containing list of database names.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DatabaseExists(System.String)">
+            <summary>
+            Check for the existence of a database by name.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing a Boolean indicating if the database exists.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateDatabase(System.String,System.Collections.Generic.List{ArangoDBLite.AdbUser},ArangoDBLite.AdbDatabaseOptions)">
+            <summary>
+            Create a database.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="users">Users to create along with the database.</param>
+            <param name="options">Database options.</param>
+            <returns>AdbResult with Result containing Boolean indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DeleteDatabase(System.String)">
+            <summary>
+            Delete a database.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing Boolean indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListUsers">
+            <summary>
+            List users available within the ArangoDB instance.
+            </summary>
+            <returns>AdbResult with Result containing list of AdbUser objects.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.GetUser(System.String)">
+            <summary>
+            Retrieve a user.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing an AdbUser object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.UserExists(System.String)">
+            <summary>
+            Check for the existence of a user by name.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing a Boolean indicating if the user exists.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateUser(System.String,System.String,System.Boolean,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Create a user.
+            </summary>
+            <param name="username">Username.</param>
+            <param name="password">Password.</param>
+            <param name="active">Flag to indicate if the account is active.</param>
+            <param name="metadata">Additional metadata parameters.</param>
+            <returns>AdbResult with Result containing an AdbUser object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateUser(ArangoDBLite.AdbUser)">
+            <summary>
+            Create a user.
+            </summary>
+            <param name="user">User.</param>
+            <returns>AdbResult with Result containing an AdbUser object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DeleteUser(System.String)">
+            <summary>
+            Delete a user.
+            </summary>
+            <param name="name">Username.</param>
+            <returns>AdbResult with Result indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListCollections">
+            <summary>
+            List collections.
+            </summary>
+            <returns>AdbResult with Result containing list of AdbCollection objects.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListCollections(ArangoDBLite.AdbCollectionType)">
+            <summary>
+            List collections by collection type.
+            </summary>
+            <param name="collectionType">Collection type.</param>
+            <returns>AdbResult with Result containing list of AdbCollection objects.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.GetCollection(System.String)">
+            <summary>
+            Retrieve a collection.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing an AdbCollection object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CollectionExists(System.String)">
+            <summary>
+            Check for the existence of a collection by name.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing a Boolean indicating if the collection exists.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateCollection(System.String,ArangoDBLite.AdbCollectionType,System.Boolean,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            Create a collection.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="collectionType">Collection type.</param>
+            <param name="waitForSync">Wait for sync.</param>
+            <param name="doCompact">Do compact.</param>
+            <param name="journalSize">Journal size.</param>
+            <param name="isSystem">Is system.</param>
+            <returns>AdbResult with Result containing an AdbCollection object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateCollection(ArangoDBLite.AdbCollection)">
+            <summary>
+            Create a collection.
+            </summary>
+            <param name="collection">Collection.</param>
+            <returns>AdbResult with Result containing an AdbCollection object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DeleteCollection(System.String)">
+            <summary>
+            Delete a collection.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListGraphs">
+            <summary>
+            List graphs.
+            </summary>
+            <returns>AdbResult with Graphs containing list of AdbGraph objects.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.GetGraph(System.String)">
+            <summary>
+            Retrieve a graph.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Graph containing an AdbGraph object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.GraphExists(System.String)">
+            <summary>
+            Check for the existence of a graph by name.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result containing a Boolean indicating if the graph exists.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateGraph(System.String,System.Collections.Generic.List{ArangoDBLite.AdbEdgeDefinition})">
+            <summary>
+            Create a graph.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="edgeDefinitions">Edge definitions.</param>
+            <returns>AdbResult with Graph containing an AdbGraph object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateGraph(ArangoDBLite.AdbGraph)">
+            <summary>
+            Create a graph.
+            </summary>
+            <param name="graph">Graph.</param>
+            <returns>AdbResult with Graph containing an AdbGraph object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.AddGraphEdgeCollection(System.String,ArangoDBLite.AdbEdgeDefinition)">
+            <summary>
+            Add edge collection to a graph.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="edgeDefinition">Edge definition.</param>
+            <returns>AdbResult with Graph containing an AdbGraph object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DeleteGraph(System.String)">
+            <summary>
+            Delete a graph.
+            </summary>
+            <param name="name">Name.</param>
+            <returns>AdbResult with Result indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListVertices(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            List vertices.
+            Note: this API uses cursor queries iteratively to retrieve all results.  
+            As such, it may take a long time to complete, and has the potential to consume a lot of memory.  
+            It is recommended that you use filters to reduce the number of results returned.
+            Filters are ANDed within the query.
+            </summary>
+            <param name="collectionName">Collection name.</param>
+            <param name="filters">Filters to include in the cursor query.</param>
+            <returns>AdbResult where Result contains a list of AdbVertex objects.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateVertex(System.String,System.String,System.String)">
+            <summary>
+            Create a vertex.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateVertex``1(System.String,System.String,``0)">
+            <summary>
+            Create a vertex.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="obj">Object.  Must be serializable.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.UpdateVertex(System.String,System.String,System.String,System.String)">
+            <summary>
+            Update an existing vertex.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ReplaceVertex(System.String,System.String,System.String,System.String)">
+            <summary>
+            Overwrite an existing vertex.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.GetVertex(System.String,System.String,System.String)">
+            <summary>
+            Retrieve a vertex.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DeleteVertex(System.String,System.String,System.String)">
+            <summary>
+            Delete a vertex.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <returns>AdbResult with Result indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.FirstVertex(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve the first vertex matching the supplied filters.
+            Note: this API uses cursor queries internally.
+            Filters are ANDed within the query.
+            </summary>
+            <param name="collectionName">Collection name.</param>
+            <param name="filters">Filters to include in the cursor query.</param>
+            <returns>AdbResult where Result contains the first matching AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ListEdges(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            List edges.
+            Note: this API uses cursor queries iteratively to retrieve all results.  
+            As such, it may take a long time to complete, and has the potential to consume a lot of memory.  
+            It is recommended that you use filters to reduce the number of results returned.
+            Filters are ANDed within the query.
+            </summary>
+            <param name="collectionName">Collection name.</param>
+            <param name="filters">Filters to include in the cursor query.</param>
+            <returns>AdbResult where Result contains a list of AdbEdge objects.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateEdge(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create an edge.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="fromId">From ID.</param>
+            <param name="toId">To ID.</param>
+            <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.CreateEdge``1(System.String,System.String,System.String,System.String,``0)">
+            <summary>
+            Create an edge.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="fromId">From ID.</param>
+            <param name="toId">To ID.</param>
+            <param name="obj">Object.  Must be serializable.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.UpdateEdge(System.String,System.String,System.String,System.String)">
+            <summary>
+            Update an edge.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ReplaceEdge(System.String,System.String,System.String,System.String)">
+            <summary>
+            Replace an edge.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.GetEdge(System.String,System.String,System.String)">
+            <summary>
+            Retrieve an edge.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.DeleteEdge(System.String,System.String,System.String)">
+            <summary>
+            Delete an edge.
+            </summary>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <returns>AdbResult with Result indicating success.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.FirstEdge(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve the first edge matching the supplied filters.
+            Note: this API uses cursor queries internally.
+            Filters are ANDed within the query.
+            </summary>
+            <param name="collectionName">Collection name.</param>
+            <param name="filters">Filters to include in the cursor query.</param>
+            <returns>AdbResult where Result contains the first matching AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ExecuteCursorQuery``1(System.String,System.String)">
+            <summary>
+            Execute a cursor query.
+            </summary>
+            <typeparam name="T">Return value type.</typeparam>
+            <param name="query">Query.</param>
+            <param name="cursorId">Cursor ID.</param>
+            <returns>AdbResult with Result containing an object of the supplied type.</returns>
+        </member>
+        <member name="T:ArangoDBLite.AdbCollection">
+            <summary>
+            ArangoDB collection.
+            Certain parameters are not yet supported, including schema, keyOptions.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.WaitForSync">
+            <summary>
+            Wait for sync.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.DoCompact">
+            <summary>
+            Do compact.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.JournalSize">
+            <summary>
+            Journal size.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.IsSystem">
+            <summary>
+            Indicates if the collection is a system collection.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.IsVolatile">
+            <summary>
+            Indicates if the collection is volatile, i.e. only stored in memory.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.CollectionType">
+            <summary>
+            Collection type.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbCollection.GloballyUniqueId">
+            <summary>
+            Globally-unique identifier.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbCollection.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbCollection.#ctor(System.String,ArangoDBLite.AdbCollectionType,System.Boolean,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="collectionType">Collection type.</param>
+            <param name="waitForSync">Wait for sync.</param>
+            <param name="doCompact">Do compact.</param>
+            <param name="journalSize">Journal size.</param>
+            <param name="isSystem">Is system.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbCollectionType">
+            <summary>
+            ArangoDB collection type.
+            </summary>
+        </member>
+        <member name="F:ArangoDBLite.AdbCollectionType.DocumentCollection">
+            <summary>
+            Document collection.
+            </summary>
+        </member>
+        <member name="F:ArangoDBLite.AdbCollectionType.EdgeCollection">
+            <summary>
+            Edge collection.
+            </summary>
+        </member>
+        <member name="T:ArangoDBLite.AdbDatabase">
+            <summary>
+            ArangoDB database.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbDatabase.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbDatabase.Users">
+            <summary>
+            Users.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbDatabase.Options">
+            <summary>
+            Database options.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbDatabase.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbDatabase.#ctor(System.String,System.Collections.Generic.List{ArangoDBLite.AdbUser},ArangoDBLite.AdbDatabaseOptions)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="users">Users.</param>
+            <param name="options">Database options.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbDatabaseOptions">
+            <summary>
+            ArangoDB database options.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbDatabaseOptions.Sharding">
+            <summary>
+            Sharding mode.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbDatabaseOptions.ReplicationFactor">
+            <summary>
+            Replication factor.
+            Valid values are either "satellite" or a positive integer.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbDatabaseOptions.WriteConcern">
+            <summary>
+            Write concern.
+            
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbDatabaseOptions.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbDatabaseOptions.#ctor(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="sharding">Sharding mode.</param>
+            <param name="replicationFactor">Replication factor.</param>
+            <param name="writeConcern">Write concern.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbEdge">
+            <summary>
+            ArangoDB edge.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.Key">
+            <summary>
+            Key.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.Revision">
+            <summary>
+            Revision.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.OldRevision">
+            <summary>
+            Old revision.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.From">
+            <summary>
+            From.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.To">
+            <summary>
+            To.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdge.Data">
+            <summary>
+            JObject.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbEdge.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbEdge.ToObject``1">
+            <summary>
+            Create an object of the supplied type using the Data property.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <returns>Instance.</returns>
+        </member>
+        <member name="T:ArangoDBLite.AdbEdgeDefinition">
+            <summary>
+            ArangoDB edge definition.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdgeDefinition.CollectionName">
+            <summary>
+            Edge collection name.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdgeDefinition.FromVertexCollections">
+            <summary>
+            Vertex collections from which the edge may initiate.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbEdgeDefinition.ToVertexCollections">
+            <summary>
+            Vertex collections to which the edge may terminate.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbEdgeDefinition.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbEdgeDefinition.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="collectionName">Edge collection name.</param>
+            <param name="fromVertexCollections">Vertex collections from which the edge may initiate.</param>
+            <param name="toVertexCollections">Vertex collections to which the edge may terminate.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbGraph">
+            <summary>
+            ArangoDB graph.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbGraph.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbGraph.Key">
+            <summary>
+            Key.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbGraph.Revision">
+            <summary>
+            Revision.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbGraph.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbGraph.EdgeDefinitions">
+            <summary>
+            Edge definitions.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbGraph.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbGraph.#ctor(System.String,System.Collections.Generic.List{ArangoDBLite.AdbEdgeDefinition})">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="name">Name.</param>
+            <param name="edgeDefinitions">Edge definitions.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbResult">
+            <summary>
+            ArangoDBLite API execution result.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.Time">
+            <summary>
+            Timestamps associated with the query.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.Error">
+            <summary>
+            Flag to indicate if an error was detected.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.ErrorMessage">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.ErrorNumber">
+            <summary>
+            Error number.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.Code">
+            <summary>
+            HTTP status code.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.Result">
+            <summary>
+            Result.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.Graphs">
+            <summary>
+            List of graphs.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.Graph">
+            <summary>
+            Graph.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.MoreResults">
+            <summary>
+            Flag that indicates if the search can be continued using the specified cursor ID.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbResult.CursorId">
+            <summary>
+            Cursor ID to continue the search.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbResult.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbResult.#ctor(RestWrapper.RestResponse)">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="resp">REST response.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbUser">
+            <summary>
+            ArangoDB user.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbUser.Username">
+            <summary>
+            Username.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbUser.Password">
+            <summary>
+            Password.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbUser.Active">
+            <summary>
+            Flag to indicate if the account is active.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbUser.Metadata">
+            <summary>
+            Additional metadata parameters.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbUser.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbUser.#ctor(System.String,System.String,System.Boolean,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Instantiate the object.
+            </summary>
+            <param name="username">Username.</param>
+            <param name="password">Password.</param>
+            <param name="active">Flag to indicate if the account is active.</param>
+            <param name="metadata">Additional metadata parameters.</param>
+        </member>
+        <member name="T:ArangoDBLite.AdbVertex">
+            <summary>
+            ArangoDB vertex.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbVertex.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbVertex.Key">
+            <summary>
+            Key.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbVertex.Revision">
+            <summary>
+            Revision.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbVertex.OldRevision">
+            <summary>
+            Old revision.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.AdbVertex.Data">
+            <summary>
+            JObject.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbVertex.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.AdbVertex.ToObject``1">
+            <summary>
+            Create an object of the supplied type using the Data property.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <returns>Instance.</returns>
+        </member>
+        <member name="T:ArangoDBLite.ObjectExtensions">
+            <summary>
+            Object extensions.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.ObjectExtensions.ToJson(System.Object,System.Boolean)">
+            <summary>
+            Return a JSON string of this object.
+            </summary>
+            <param name="obj">Object.</param>
+            <param name="pretty">Enable or disable pretty print.</param>
+            <returns>JSON string.</returns>
+        </member>
+        <member name="T:ArangoDBLite.Timestamps">
+            <summary>
+            Object used to measure start, end, and total time associated with an operation.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.Timestamps.Start">
+            <summary>
+            The time at which the operation started.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.Timestamps.End">
+            <summary>
+            The time at which the operation ended.
+            </summary>
+        </member>
+        <member name="P:ArangoDBLite.Timestamps.TotalMs">
+            <summary>
+            The total number of milliseconds that transpired between Start and End.
+            </summary>
+        </member>
+        <member name="M:ArangoDBLite.Timestamps.#ctor">
+            <summary>
+            Instantiate the object.
+            </summary>
+        </member>
+    </members>
+</doc>

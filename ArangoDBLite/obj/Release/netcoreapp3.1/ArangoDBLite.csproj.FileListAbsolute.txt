@@ -1,0 +1,13 @@
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\ArangoDBLite.xml
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\assets\logo.ico
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\assets\logo.png
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\LICENSE.md
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\ArangoDBLite.deps.json
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\ArangoDBLite.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\netcoreapp3.1\ArangoDBLite.csprojAssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\netcoreapp3.1\ArangoDBLite.AssemblyInfoInputs.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\netcoreapp3.1\ArangoDBLite.AssemblyInfo.cs
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\netcoreapp3.1\ArangoDBLite.csproj.CoreCompileInputs.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\netcoreapp3.1\ArangoDBLite.dll
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Release\netcoreapp3.1\ArangoDBLite.pdb
