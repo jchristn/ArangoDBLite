@@ -1263,7 +1263,7 @@ namespace ArangoDBLite
             JObject jObj = null;
             JArray jArray = null;
 
-            Logger?.Invoke(_Header + "executing cursor query using " + method.ToString() + " " + url);
+            Logger?.Invoke(_Header + "executing cursor query using " + method.ToString() + " " + url + ": " + Environment.NewLine + query);
             RestResponse resp = await GetRestResponse(url, method, data);
              
             AdbResult ret = new AdbResult(resp);

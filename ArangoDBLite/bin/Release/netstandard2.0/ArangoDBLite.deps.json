@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "ArangoDBLite/1.0.1": {
+      "ArangoDBLite/1.0.2": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "RestWrapper": "2.2.1.10"
@@ -484,7 +484,7 @@
     }
   },
   "libraries": {
-    "ArangoDBLite/1.0.1": {
+    "ArangoDBLite/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,6 +18,7 @@ This project was built to provide a dead simple interface to interact with Arang
 
 - Initial release
 - Fix for ```First``` APIs
+- Include cursor query in log messages
 
 ## Example Project
 
