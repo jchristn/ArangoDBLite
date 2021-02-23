@@ -777,6 +777,21 @@ namespace ArangoDBLite
         }
 
         /// <summary>
+        /// Update an existing vertex.
+        /// </summary>
+        /// <typeparam name="T">Type.</typeparam>
+        /// <param name="graphName">Graph name.</param>
+        /// <param name="collectionName">Collection name.</param>
+        /// <param name="key">Key.</param>
+        /// <param name="obj">Object.  Must be serializable.</param>
+        /// <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        public async Task<AdbResult> UpdateVertex<T>(string graphName, string collectionName, string key, T obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            return await UpdateVertex(graphName, collectionName, key, obj.ToJson(false));
+        }
+
+        /// <summary>
         /// Overwrite an existing vertex.
         /// </summary>
         /// <param name="graphName">Graph name.</param>
@@ -807,6 +822,21 @@ namespace ArangoDBLite
             ret.Time.Start = start;
             ret.Time.End = DateTime.Now;
             return ret;
+        }
+
+        /// <summary>
+        /// Overwrite an existing vertex.
+        /// </summary>
+        /// <typeparam name="T">Type.</typeparam>
+        /// <param name="graphName">Graph name.</param>
+        /// <param name="collectionName">Collection name.</param>
+        /// <param name="key">Key.</param>
+        /// <param name="obj">Object.  Must be serializable.</param>
+        /// <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        public async Task<AdbResult> ReplaceVertex<T>(string graphName, string collectionName, string key, T obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            return await ReplaceVertex(graphName, collectionName, key, obj.ToJson(false));
         }
 
         /// <summary>
@@ -1079,6 +1109,21 @@ namespace ArangoDBLite
         }
 
         /// <summary>
+        /// Update an edge.
+        /// </summary>
+        /// <typeparam name="T">Type.</typeparam>
+        /// <param name="graphName">Graph name.</param>
+        /// <param name="collectionName">Collection name.</param>
+        /// <param name="key">Key.</param>
+        /// <param name="obj">Object.  Must be serializable.</param>
+        /// <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        public async Task<AdbResult> UpdateEdge<T>(string graphName, string collectionName, string key, T obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            return await UpdateEdge(graphName, collectionName, key, obj.ToJson(false));
+        }
+
+        /// <summary>
         /// Replace an edge.
         /// </summary>
         /// <param name="graphName">Graph name.</param>
@@ -1109,6 +1154,21 @@ namespace ArangoDBLite
             ret.Time.Start = start;
             ret.Time.End = DateTime.Now;
             return ret;
+        }
+
+        /// <summary>
+        /// Replace an edge.
+        /// </summary>
+        /// <typeparam name="T">Type.</typeparam>
+        /// <param name="graphName">Graph name.</param>
+        /// <param name="collectionName">Collection name.</param>
+        /// <param name="key">Key.</param>
+        /// <param name="obj">Object.  Must be serializable.</param>
+        /// <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        public async Task<AdbResult> ReplaceEdge<T>(string graphName, string collectionName, string key, T obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            return await ReplaceEdge(graphName, collectionName, key, obj.ToJson(false));
         }
 
         /// <summary>

@@ -244,6 +244,17 @@
             <param name="json">JSON.</param>
             <returns>AdbResult with Result containing an AdbVertex object.</returns>
         </member>
+        <member name="M:ArangoDBLite.AdbClient.UpdateVertex``1(System.String,System.String,System.String,``0)">
+            <summary>
+            Update an existing vertex.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="obj">Object.  Must be serializable.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
         <member name="M:ArangoDBLite.AdbClient.ReplaceVertex(System.String,System.String,System.String,System.String)">
             <summary>
             Overwrite an existing vertex.
@@ -252,6 +263,17 @@
             <param name="collectionName">Collection name.</param>
             <param name="key">Key.</param>
             <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbVertex object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ReplaceVertex``1(System.String,System.String,System.String,``0)">
+            <summary>
+            Overwrite an existing vertex.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="obj">Object.  Must be serializable.</param>
             <returns>AdbResult with Result containing an AdbVertex object.</returns>
         </member>
         <member name="M:ArangoDBLite.AdbClient.GetVertex(System.String,System.String,System.String)">
@@ -327,6 +349,17 @@
             <param name="json">JSON.</param>
             <returns>AdbResult with Result containing an AdbEdge object.</returns>
         </member>
+        <member name="M:ArangoDBLite.AdbClient.UpdateEdge``1(System.String,System.String,System.String,``0)">
+            <summary>
+            Update an edge.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="obj">Object.  Must be serializable.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
         <member name="M:ArangoDBLite.AdbClient.ReplaceEdge(System.String,System.String,System.String,System.String)">
             <summary>
             Replace an edge.
@@ -335,6 +368,17 @@
             <param name="collectionName">Collection name.</param>
             <param name="key">Key.</param>
             <param name="json">JSON.</param>
+            <returns>AdbResult with Result containing an AdbEdge object.</returns>
+        </member>
+        <member name="M:ArangoDBLite.AdbClient.ReplaceEdge``1(System.String,System.String,System.String,``0)">
+            <summary>
+            Replace an edge.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="graphName">Graph name.</param>
+            <param name="collectionName">Collection name.</param>
+            <param name="key">Key.</param>
+            <param name="obj">Object.  Must be serializable.</param>
             <returns>AdbResult with Result containing an AdbEdge object.</returns>
         </member>
         <member name="M:ArangoDBLite.AdbClient.GetEdge(System.String,System.String,System.String)">
