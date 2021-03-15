@@ -17,52 +17,52 @@ namespace ArangoDBLite
         /// <summary>
         /// Timestamps associated with the query.
         /// </summary>
-        public Timestamps Time { get; internal set; } = new Timestamps();
+        public Timestamps Time { get; set; } = new Timestamps();
 
         /// <summary>
         /// Flag to indicate if an error was detected.
         /// </summary>
-        public bool Error { get; internal set; } = false;
+        public bool Error { get; set; } = false;
 
         /// <summary>
         /// Error message.
         /// </summary>
-        public string ErrorMessage { get; internal set; } = null;
+        public string ErrorMessage { get; set; } = null;
 
         /// <summary>
         /// Error number.
         /// </summary>
-        public int? ErrorNumber { get; internal set; } = null;
+        public int? ErrorNumber { get; set; } = null;
 
         /// <summary>
         /// HTTP status code.
         /// </summary>
-        public int Code { get; internal set; } = 0;
+        public int Code { get; set; } = 0;
 
         /// <summary>
         /// Result.
         /// </summary>
-        public object Result { get; internal set; } = null;
+        public object Result { get; set; } = null;
 
         /// <summary>
         /// List of graphs.
         /// </summary>
-        public List<AdbGraph> Graphs { get; internal set; } = null;
+        public List<AdbGraph> Graphs { get; set; } = null;
 
         /// <summary>
         /// Graph.
         /// </summary>
-        public AdbGraph Graph { get; internal set; } = null;
+        public AdbGraph Graph { get; set; } = null;
 
         /// <summary>
         /// Flag that indicates if the search can be continued using the specified cursor ID.
         /// </summary>
-        public bool? MoreResults { get; internal set; } = null;
+        public bool? MoreResults { get; set; } = null;
 
         /// <summary>
         /// Cursor ID to continue the search.
         /// </summary>
-        public string CursorId { get; internal set; } = null;
+        public string CursorId { get; set; } = null;
 
         #endregion
 

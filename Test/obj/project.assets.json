@@ -928,7 +928,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -2060,7 +2060,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -2133,7 +2133,7 @@
           "lib/net45/_._": {}
         }
       },
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -2206,7 +2206,7 @@
           "lib/net45/_._": {}
         }
       },
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -3147,7 +3147,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -4279,7 +4279,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -7575,7 +7575,7 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "ArangoDBLite/1.0.3": {
+    "ArangoDBLite/1.0.4": {
       "type": "project",
       "path": "../ArangoDBLite/ArangoDBLite.csproj",
       "msbuildProject": "../ArangoDBLite/ArangoDBLite.csproj"
@@ -7583,17 +7583,17 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ArangoDBLite >= 1.0.3",
+      "ArangoDBLite >= 1.0.4",
       "Microsoft.CSharp >= 4.7.0",
       "System.Dynamic.Runtime >= 4.3.0"
     ],
     ".NETFramework,Version=v4.5.2": [
-      "ArangoDBLite >= 1.0.3",
+      "ArangoDBLite >= 1.0.4",
       "Microsoft.CSharp >= 4.7.0",
       "System.Dynamic.Runtime >= 4.3.0"
     ],
     "net5.0": [
-      "ArangoDBLite >= 1.0.3",
+      "ArangoDBLite >= 1.0.4",
       "Microsoft.CSharp >= 4.7.0",
       "System.Dynamic.Runtime >= 4.3.0"
     ]
@@ -7691,7 +7691,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       },
       "net5.0": {
         "targetAlias": "net5.0",
@@ -7720,7 +7720,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       },
       "net452": {
         "targetAlias": "net452",
@@ -7734,7 +7734,7 @@
             "version": "[4.3.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "ArangoDBLite/1.0.3": {
+      "ArangoDBLite/1.0.4": {
         "dependencies": {
           "RestWrapper": "2.2.1.10"
         },
@@ -429,7 +429,7 @@
     }
   },
   "libraries": {
-    "ArangoDBLite/1.0.3": {
+    "ArangoDBLite/1.0.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

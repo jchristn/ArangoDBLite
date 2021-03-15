@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ArangoDBLite</id>
+    <version>1.0.4</version>
+    <authors>Joel Christner</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo.png</icon>
+    <projectUrl>https://github.com/jchristn/ArangoDBLite</projectUrl>
+    <description>ArangoDBLite is a lightweight SDK for the RESTful API provided by the ArangoDB graph database platform.</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>(c)2021 Joel Christner</copyright>
+    <tags>arango arangodb graph database client sdk</tags>
+    <repository type="github" url="https://github.com/jchristn/ArangoDBLite" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="RestWrapper" version="2.2.1.10" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="RestWrapper" version="2.2.1.10" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="RestWrapper" version="2.2.1.10" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="RestWrapper" version="2.2.1.10" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="RestWrapper" version="2.2.1.10" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\ArangoDBLite.dll" target="lib\net452\ArangoDBLite.dll" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net452\ArangoDBLite.xml" target="lib\net452\ArangoDBLite.xml" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net5.0\ArangoDBLite.dll" target="lib\net5.0\ArangoDBLite.dll" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\net5.0\ArangoDBLite.xml" target="lib\net5.0\ArangoDBLite.xml" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\ArangoDBLite.dll" target="lib\netcoreapp3.1\ArangoDBLite.dll" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netcoreapp3.1\ArangoDBLite.xml" target="lib\netcoreapp3.1\ArangoDBLite.xml" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netstandard2.0\ArangoDBLite.dll" target="lib\netstandard2.0\ArangoDBLite.dll" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netstandard2.0\ArangoDBLite.xml" target="lib\netstandard2.0\ArangoDBLite.xml" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netstandard2.1\ArangoDBLite.dll" target="lib\netstandard2.1\ArangoDBLite.dll" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Release\netstandard2.1\ArangoDBLite.xml" target="lib\netstandard2.1\ArangoDBLite.xml" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\assets\logo.png" target="logo.png" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\ArangoDBLite.xml" target="ArangoDBLite.xml" />
+    <file src="C:\Code\Misc\ArangoDBLite\ArangoDBLite\LICENSE.md" target="LICENSE.md" />
+  </files>
+</package>
