@@ -6,7 +6,6 @@ C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net5.0\ArangoDBLite.deps.json
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net5.0\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net5.0\ref\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net5.0\ArangoDBLite.pdb
-C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.csprojAssemblyReference.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.GeneratedMSBuildEditorConfig.editorconfig
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.AssemblyInfoInputs.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.AssemblyInfo.cs
@@ -14,3 +13,4 @@ C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.csproj.Core
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ref\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net5.0\ArangoDBLite.csproj.AssemblyReference.cache

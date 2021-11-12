@@ -12,7 +12,6 @@ C:\Code\Misc\ArangoDBLite\Test\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Code\Misc\ArangoDBLite\Test\bin\Release\netcoreapp3.1\RestWrapper.dll
 C:\Code\Misc\ArangoDBLite\Test\bin\Release\netcoreapp3.1\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\Test\bin\Release\netcoreapp3.1\ArangoDBLite.pdb
-C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.csprojAssemblyReference.cache
 C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.AssemblyInfoInputs.cache
 C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.AssemblyInfo.cs
 C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
@@ -20,3 +19,5 @@ C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.csproj.CopyComplet
 C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.dll
 C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.pdb
 C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.genruntimeconfig.cache
+C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.csproj.AssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\Test\obj\Release\netcoreapp3.1\Test.GeneratedMSBuildEditorConfig.editorconfig

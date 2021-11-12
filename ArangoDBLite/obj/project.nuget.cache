@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a6PjehBhb3TTpjZRpa3oAvqFwi4QU5bjxnroQdKz3RdpPbqMcGx7vDk9LiI2FmpaOL7M8dELZ2m3KfMa1YL+gA==",
+  "dgSpecHash": "70WEKR9m3h+7Hk8s/by9lVzVjFws0YJnC14f5QuD0wcgN8nKrtmyu32hX8+1GAxj4inTGp6RMTOMaN0yEhUgVg==",
   "success": true,
   "projectFilePath": "C:\\Code\\Misc\\ArangoDBLite\\ArangoDBLite\\ArangoDBLite.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\joelc\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\joelc\\.nuget\\packages\\restwrapper\\2.2.1.10\\restwrapper.2.2.1.10.nupkg.sha512",
+    "C:\\Users\\joelc\\.nuget\\packages\\restwrapper\\2.2.1.13\\restwrapper.2.2.1.13.nupkg.sha512",
     "C:\\Users\\joelc\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\joelc\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\joelc\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

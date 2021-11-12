@@ -10,4 +10,5 @@ C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.Ass
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.csproj.CoreCompileInputs.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.pdb
-C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.csprojAssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.csproj.AssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netstandard2.0\ArangoDBLite.GeneratedMSBuildEditorConfig.editorconfig

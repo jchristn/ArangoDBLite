@@ -5,9 +5,10 @@ C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netcoreapp3.1\LICENSE.md
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netcoreapp3.1\ArangoDBLite.deps.json
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netcoreapp3.1\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\netcoreapp3.1\ArangoDBLite.pdb
-C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.csprojAssemblyReference.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.AssemblyInfoInputs.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.AssemblyInfo.cs
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.csproj.CoreCompileInputs.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.csproj.AssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\netcoreapp3.1\ArangoDBLite.GeneratedMSBuildEditorConfig.editorconfig

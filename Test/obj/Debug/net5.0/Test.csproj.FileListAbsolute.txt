@@ -13,7 +13,6 @@ c:\code\misc\ArangoDBLite\Test\bin\Debug\net5.0\RestWrapper.dll
 c:\code\misc\ArangoDBLite\Test\bin\Debug\net5.0\ArangoDBLite.dll
 c:\code\misc\ArangoDBLite\Test\bin\Debug\net5.0\ArangoDBLite.pdb
 c:\code\misc\ArangoDBLite\Test\bin\Debug\net5.0\ArangoDBLite.xml
-c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.csprojAssemblyReference.cache
 c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
 c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
 c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
@@ -23,3 +22,4 @@ c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.dll
 c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\ref\Test.dll
 c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.pdb
 c:\code\misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Code\Misc\ArangoDBLite\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache

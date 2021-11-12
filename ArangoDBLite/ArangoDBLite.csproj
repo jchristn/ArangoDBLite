@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net452;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net452;net5.0;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Joel Christner</Authors>
     <Company>Joel Christner</Company>
@@ -14,8 +14,8 @@
     <RepositoryUrl>https://github.com/jchristn/ArangoDBLite</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <PackageTags>arango arangodb graph database client sdk</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
-    <Version>1.0.4</Version>
+    <PackageReleaseNotes>.NET 6 support</PackageReleaseNotes>
+    <Version>1.0.4.1</Version>
   </PropertyGroup>
 
   
@@ -60,7 +60,7 @@
 
   
   <ItemGroup>
-    <PackageReference Include="RestWrapper" Version="2.2.1.10" />
+    <PackageReference Include="RestWrapper" Version="2.2.1.13" />
   </ItemGroup>
 
 </Project>

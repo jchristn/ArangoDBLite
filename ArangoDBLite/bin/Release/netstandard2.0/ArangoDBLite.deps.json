@@ -7,10 +7,10 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "ArangoDBLite/1.0.4": {
+      "ArangoDBLite/1.0.4.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "RestWrapper": "2.2.1.10"
+          "RestWrapper": "2.2.1.13"
         },
         "runtime": {
           "ArangoDBLite.dll": {}
@@ -31,15 +31,15 @@
           }
         }
       },
-      "RestWrapper/2.2.1.10": {
+      "RestWrapper/2.2.1.13": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "System.Net.Http": "4.3.4"
         },
         "runtime": {
           "lib/netstandard2.0/RestWrapper.dll": {
-            "assemblyVersion": "2.2.1.10",
-            "fileVersion": "2.2.1.10"
+            "assemblyVersion": "2.2.1.13",
+            "fileVersion": "2.2.1.13"
           }
         }
       },
@@ -484,7 +484,7 @@
     }
   },
   "libraries": {
-    "ArangoDBLite/1.0.4": {
+    "ArangoDBLite/1.0.4.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -517,12 +517,12 @@
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
-    "RestWrapper/2.2.1.10": {
+    "RestWrapper/2.2.1.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p+juvA19V4JtY27sr7aOuRbfxTZA+T3589e5raRzGzGE/momz/1fNEuxjMgbMU2Qs84Vd30l18eNtSzKz0Ia4g==",
-      "path": "restwrapper/2.2.1.10",
-      "hashPath": "restwrapper.2.2.1.10.nupkg.sha512"
+      "sha512": "sha512-31+VYw6QNhyo7QCKnkND/7nkjuPbq35BTDIT+QktWxXDs1BGCeDoXP+OeU3515S53JRyylJ9ZWvBwtWSZZ+aFQ==",
+      "path": "restwrapper/2.2.1.13",
+      "hashPath": "restwrapper.2.2.1.13.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

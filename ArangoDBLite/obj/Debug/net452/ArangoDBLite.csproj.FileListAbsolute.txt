@@ -6,10 +6,11 @@ C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net452\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net452\ArangoDBLite.pdb
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net452\Newtonsoft.Json.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\bin\Debug\net452\RestWrapper.dll
-C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.csprojAssemblyReference.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.AssemblyInfoInputs.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.AssemblyInfo.cs
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.csproj.CoreCompileInputs.cache
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.csproj.CopyComplete
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.dll
 C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.pdb
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.csproj.AssemblyReference.cache
+C:\Code\Misc\ArangoDBLite\ArangoDBLite\obj\Debug\net452\ArangoDBLite.GeneratedMSBuildEditorConfig.editorconfig
